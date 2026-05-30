@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手部关键点检测 Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        header h1 { color: #667eea; font-size: 2.5em; }
+        .section {
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .profile { display: flex; gap: 30px; align-items: center; }
+        .avatar {
+            width: 150px; height: 150px; border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 4em; color: white;
+        }
+        .tags { display: flex; gap: 10px; margin-top: 15px; }
+        .tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white; padding: 5px 15px; border-radius: 20px;
+        }
+        footer { text-align: center; padding: 30px; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖐️ 手部关键点检测 Demo</h1>
+            <p>Hand Keypoint Detection with MediaPipe</p>
+        </header>
+        
+        <section class="section">
+            <h2>👤 个人介绍</h2>
+            <div class="profile">
+                <div class="avatar">👨‍💻</div>
+                <div>
+                    <h3>[您的姓名]</h3>
+                    <p>🎓 学校：[您的学校]</p>
+                    <p>💡 方向：计算机视觉、人工智能</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">MediaPipe</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>🎬 演示视频</h2>
+            <p>请将您的演示视频上传到这里</p>
+        </section>
+        
+        <section class="section">
+            <h2>⚙️ 功能说明</h2>
+            <ul>
+                <li>✅ 实时手部关键点检测（21个点）</li>
+                <li>✅ 手势识别（数字0-5、点赞、胜利等）</li>
+                <li>✅ 手指计数</li>
+                <li>✅ 左右手区分</li>
+                <li>✅ 面部关键点检测</li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>Made with ❤️ by [您的姓名]</p>
+            <p>© 2026 Hand Keypoint Detection Demo</p>
+        </footer>
+    </div>
+</body>
+</html>
